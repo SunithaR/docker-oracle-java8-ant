@@ -13,7 +13,7 @@ RUN cd  \
     && wget -q ${ANT_DOWNLOAD_URI}apache-ant-${ANT_VERSION}-bin.tar.gz  \
     && tar -xzf apache-ant-${ANT_VERSION}-bin.tar.gz  \
     && mv apache-ant-${ANT_VERSION} /opt/ant  \
-    && rm apache-ant-${ANT_VERSION}-bin.tar.gz
+    && rm -v apache-ant-${ANT_VERSION}-bin.tar.gz
 
 ENV ANT_HOME /opt/ant
 ENV PATH ${PATH}:/opt/ant/bin
